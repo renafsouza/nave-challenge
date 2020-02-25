@@ -1,0 +1,1 @@
+SELECT posts.id as post_id,posts.author as post_author,posts.title as post_title,posts.text as post_text,comments.id as comment_id, comments.author as comment_author, comments.message as comment_message FROM "Posts" posts JOIN "Comments" comments ON posts.id=comments.post_id;

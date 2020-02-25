@@ -1,0 +1,1 @@
+select id as post_id,count(posts_comments.post_id) as n_comments from (SELECT posts.id,comments.post_id FROM "Posts" posts JOIN "Comments" comments ON posts.id=comments.post_id) posts_comments GROUP BY posts_comments.id
