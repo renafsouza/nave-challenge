@@ -14,7 +14,7 @@ Execute usando o npm
 npm start
 ```
 ## Desafio Front-End:
-Se encontra no diretório `desafio fron-end`
+Se encontra no diretório `desafio front-end`
 ## Executar
 Execute o arquivo `index.html` com um navegador.
 ## Desafio back-end:
