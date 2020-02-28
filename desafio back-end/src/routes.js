@@ -6,11 +6,11 @@ const routes = Express.Router();
 
 routes.get('/posts', postController.list);
 routes.post('/posts', postController.create);
-routes.put('/posts', postController.update);
+routes.put('/posts/:id', postController.update);
 
 routes.get('/comments', commentController.list);
 routes.post('/comments', commentController.create);
-routes.put('/comments', commentController.update);
+routes.put('/comments/:id', commentController.update);
 
 // Export
 module.exports = routes;

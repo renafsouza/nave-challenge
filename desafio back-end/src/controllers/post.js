@@ -28,8 +28,9 @@ const create = async (req, res)=>{
 }
 const update = async (req, res)=>{
     try{
-        let {where, set} = req.body; 
-        let updated = await Post.update(set, { where });
+        let {id} = req.params;
+        let {set} = req.body; 
+        let updated = await Post.update(set, { where:{id} });
         return res.status(201).send(updated);
     }catch(error){
         console.log(error)
