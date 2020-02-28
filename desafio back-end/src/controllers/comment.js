@@ -10,9 +10,8 @@ const list = async (req, res)=>{
 }
 const create = async (req, res)=>{
     try{
-        let {id, postId, author, message} = req.body;
+        let {postId, author, message} = req.body;
         let newComment = await Comment.create({
-            id,
             postId,
             author,
             message,

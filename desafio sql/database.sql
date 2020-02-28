@@ -1,7 +1,7 @@
 CREATE DATABASE challenge_development; 
 DROP TABLE IF EXISTS "Comments";
 CREATE TABLE "public"."Comments" (
-    "id" integer NOT NULL,
+    "id" integer NOT NULL AUTO_INCREMENT,
     "post_id" integer NOT NULL,
     "message" character varying(255) NOT NULL,
     "author" character varying(255) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE "public"."Comments" (
 
 DROP TABLE IF EXISTS "Posts";
 CREATE TABLE "public"."Posts" (
-    "id" integer NOT NULL,
+    "id" integer NOT NULL AUTO_INCREMENT,
     "author" character varying(255) NOT NULL,
     "title" character varying(255) NOT NULL,
     "text" character varying(255) NOT NULL,
